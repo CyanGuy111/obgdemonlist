@@ -1,13 +1,14 @@
 {
-    "id": 57436521,
+    "id": 76653933,
     "name": "Storming Summit",
     "author": "Nimbus",
     "creators": ["Nimbus", "Colorbolt", "Yuko", "Kiba", "endevvor", "studt", "Aleph", "ML500", "BlowMyPooh", "Xoanon", "Gabs", "Geogamer12", "Wespdx", "Yoonsr", "Rynoxious", "YakobNugget", "matty2003", "Syndrome", "BlueLite", "Grax", "Plaz", "notlsa", "Hypno74", "BelonziK", "BlazeRol", "Reunomi"],
     "verifier": "Ozzy", 
     "first_victor": "Aero",
     "verification": "https://youtu.be/q7zdRh6xNg8?feature=shared",
+    "difficulty":"Extreme Demon",
+    "cbf":"No",
     "percentToQualify": 100,
-    "password": "No password",
     "records": [
 
     ]

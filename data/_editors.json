@@ -1,22 +1,22 @@
 [
     {
         "role": "owner",
-        "name": "List Owner",
-        "link": "-"
+        "name": "DeadVoxelx",
+        "link": "https://www.youtube.com/@deadvoxelx6042"
     },
     {
         "role": "admin",
-        "name": "List Admin",
-        "link": "-"
+        "name": "RTwoSix",
+        "link": "https://www.youtube.com/@RTwoSix"
     },
     {
-        "role": "helper",
-        "name": "List Helper",
-        "link": "-"
+        "role": "admin",
+        "name": "purplek1rbl",
+        "link": "https://www.youtube.com/@purplek1rbl"
     },
     {
         "role": "dev",
         "name": "CyanGuy111",
-        "link": "https://youtube.com/@cyanguy111?si=iSGhwGNbPm9k6l3i"
+        "link": "https://youtube.com/@cyanguy111"
     }
 ]

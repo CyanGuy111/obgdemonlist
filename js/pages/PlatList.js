@@ -83,7 +83,7 @@ export default {
                         This is the list for platformer levels made by server members.
                     </p>
                     <p>
-                        For the full list, check out <a href="https://docs.google.com/spreadsheets/d/1rUbKDpv_LYnAlNvJs7ObY4_x8OflzSpu5H34n1S55Gs/edit?gid=1940251603#gid=1940251603" target="_blank" rel="noopener noreferrer"> <u> our spreadsheet </u> </a>
+                        For the full list, check out <a href="https://docs.google.com/spreadsheets/d/1rUbKDpv_LYnAlNvJs7ObY4_x8OflzSpu5H34n1S55Gs/edit?gid=2038669315#gid=2038669315" target="_blank" rel="noopener noreferrer"> <u> our spreadsheet </u> </a>
                     </p>
                 </div>
             </div>

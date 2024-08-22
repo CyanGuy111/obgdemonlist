@@ -1,6 +1,5 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
-import { score } from "../score.js";
 import { fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
@@ -39,7 +38,7 @@ export default {
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
-                    <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier" :first_victor="level.first_victor"></LevelAuthors>
+                    <LevelAuthors :author="level.author" :verifier="level.verifier" :first_victor="level.first_victor"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
@@ -140,7 +139,6 @@ export default {
         this.loading = false;
     },
     methods: {
-        embed,
-        score,
+        embed
     },
 };

@@ -4,7 +4,7 @@
 const dir = '/data';
 
 export async function fetchList() {
-    const listResult = await fetch(`${dir}/obglist/_obglist.json`);
+    const listResult = await fetch(`${dir}/obglist/_list.json`);
     try {
         const list = await listResult.json();
         return await Promise.all(

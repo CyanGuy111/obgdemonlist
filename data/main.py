@@ -31,8 +31,8 @@ arr = []
 for row in reader:
     arr.append(con_str(row[1]))
     s = "unrated"
-    # if(row[7] != '-'):
-    #     s = row[7] + " Demon"
+    if(row[7] != '-'):
+        s = row[7] + " Demon"
     dic = {
         "id" : int(row[4]),
         "name" : row[1],

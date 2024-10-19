@@ -42,7 +42,7 @@
             </div>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
-                    <span class="type-label-lg">OBG List</span>
+                    <span class="type-label-lg">Main List</span>
                 </router-link>
                 <router-link class="nav__tab" to="/platformer_list">
                     <span class="type-label-lg">Platformer List</span>
@@ -51,18 +51,9 @@
                     <span class="type-label-lg">Challenge List</span>
                 </router-link>
                 <router-link class="nav__tab" to="/list">
-                    <span class="type-label-lg">List</span>
+                    <span class="type-label-lg">Completion List</span>
                 </router-link>
                 <div class="nav__actions">
-                    <button
-                        class="nav__icon"
-                        @click.prevent="store.toggleDark()"
-                    >
-                        <img
-                            :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
-                            alt=""
-                        />
-                    </button>
                     <!-- Replace the '#' with your discord server's invite-->
                     <a class="nav__icon" href="https://discord.gg/KKdF9Ynwrb">
                         <img src="/assets/discord.svg" alt="Discord Logo" />

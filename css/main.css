@@ -54,7 +54,7 @@ main {
 
 header {
     display: flex;
-    padding-inline: calc(25vw - 10rem);
+    padding-inline: calc(17vw - 12rem);
     height: 4rem;
     background-color: var(--color-primary);
     color: var(--color-on-primary);

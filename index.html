@@ -38,7 +38,7 @@
         <header :class="{ dark: store.dark }">
             <div class="logo">
                 <img src="assets/list_icon.png" alt="there should be a list icon here" style="width:32px ;height:32px ;">
-                <h2>OBG Demon List</h2>
+                <h3>OBG Demon List</h3>
             </div>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
@@ -49,6 +49,9 @@
                 </router-link>
                 <router-link class="nav__tab" to="/clllist">
                     <span class="type-label-lg">Challenge List</span>
+                </router-link>
+                <router-link class="nav__tab" to="/illist">
+                    <span class="type-label-lg">Impossible/Unverfied List</span>
                 </router-link>
                 <router-link class="nav__tab" to="/list">
                     <span class="type-label-lg">Completion List</span>

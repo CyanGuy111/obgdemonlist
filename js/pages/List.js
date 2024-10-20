@@ -72,6 +72,9 @@ export default {
                             <p>{{ level.cbf }}</p>
                         </li>
                     </ul>
+                    <p style="white-space: pre-line">
+                        {{level.funny}}
+                    <\p>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>

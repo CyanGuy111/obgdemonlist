@@ -81,7 +81,6 @@ for row in reader:
         "name" : row[1],
         "author" : row[2],
         "creators" : [],
-        "verifier" : row[9],
         "first_victor" : row[3],
         "verification" : row[7],
         "difficulty" : s,

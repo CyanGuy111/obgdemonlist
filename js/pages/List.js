@@ -3,7 +3,7 @@ import { embed } from "../util.js";
 import { fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
-import LevelAuthors from "../components/List/LevelAuthors.js";
+import LevelAuthors from "../components/List/LevelAuthorComp.js";
 
 const roleIconMap = {
     owner: "crown",
@@ -56,7 +56,7 @@ export default {
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
-                    <LevelAuthors :author="level.author" :verifier="level.verifier" :first_victor="level.first_victor"></LevelAuthors>
+                    <LevelAuthors :author="level.author" :first_victor="level.first_victor"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>

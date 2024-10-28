@@ -150,15 +150,15 @@ arr = []
 for row in reader:
     arr.append(con_str(row[1]))
     s = "unrated"
-    if(row[7] != '-'):
-        s = row[7] + " Demon"
+    if(row[8] != '-'):
+        s = row[8] + " Demon"
     dic = {
         "id" : int(row[4]),
         "name" : row[1],
         "author" : row[2],
         "creators" : [],
         "verifier" : row[3],
-        "first_victor" : "-",
+        "first_victor" : row[7],
         "verification" : row[6],
         "difficulty" : s,
         "cbf" : row[5],

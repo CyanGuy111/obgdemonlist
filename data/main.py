@@ -176,32 +176,32 @@ json_file.write(json_object)
 json_file.close
 csv_file.close
 
-#ill
+# #ill
 
-csv_file = open(getDir('ill.csv'), 'r')
-reader = csv.reader(csv_file)
+# csv_file = open(getDir('ill.csv'), 'r')
+# reader = csv.reader(csv_file)
 
-json_file = open(getDir('illist/_list.json'), 'w')
+# json_file = open(getDir('illist/_list.json'), 'w')
 
-arr = []
+# arr = []
 
-for row in reader:
-    arr.append(con_str(row[1]))
-    dic = {
-        "id" : int(row[3]),
-        "name" : row[1],
-        "author" : row[2],
-        "verification" : row[4],
-        "difficulty" : row[5],
-        "records": []
-    }
-    json_ob = json.dumps(dic, indent=4)
-    fi = open(getDir('illist/' + con_str(row[1]) + '.json'), 'w')
-    fi.write(json_ob)
-    fi.close
+# for row in reader:
+#     arr.append(con_str(row[1]))
+#     dic = {
+#         "id" : int(row[3]),
+#         "name" : row[1],
+#         "author" : row[2],
+#         "verification" : row[4],
+#         "difficulty" : row[5],
+#         "records": []
+#     }
+#     json_ob = json.dumps(dic, indent=4)
+#     fi = open(getDir('illist/' + con_str(row[1]) + '.json'), 'w')
+#     fi.write(json_ob)
+#     fi.close
 
-json_object = json.dumps(arr, indent=4)
-json_file.write(json_object)
+# json_object = json.dumps(arr, indent=4)
+# json_file.write(json_object)
 
-json_file.close
-csv_file.close
+# json_file.close
+# csv_file.close

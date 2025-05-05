@@ -23,8 +23,9 @@ export default {
             <div class="list-container">
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
-                        <td class="rank" v-if="i + 1 <= 100">
-                            <p class="type-label-lg">#{{ i + 1 }}</p>
+                        <td class="rank" v-if="level.rank + 1 <= 100">
+                            <p class="type-label-lg" v-if="level.rank == 0">-</p>
+                            <p class="type-label-lg" v-if="level.rank != 0">#{{level.rank}}</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }" v-if="i + 1 <= 100">
                             <button @click="selected = i">
@@ -65,11 +66,10 @@ export default {
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
                         </li>
-                        <li>
-                            <div class="type-title-sm">CBF used?</div>
-                            <p>{{ level.cbf }}</p>
-                        </li>
                     </ul>
+                    <p style="white-space: pre-line">
+                        {{level.funny}}
+                    <\p>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>

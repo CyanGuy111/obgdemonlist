@@ -65,10 +65,6 @@ export default {
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
                         </li>
-                        <li>
-                            <div class="type-title-sm">CBF used?</div>
-                            <p>{{ level.cbf }}</p>
-                        </li>
                     </ul>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">

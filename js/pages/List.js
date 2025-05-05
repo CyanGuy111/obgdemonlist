@@ -67,10 +67,6 @@ export default {
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
                         </li>
-                        <li>
-                            <div class="type-title-sm">CBF used?</div>
-                            <p>{{ level.cbf }}</p>
-                        </li>
                     </ul>
                     <p style="white-space: pre-line">
                         {{level.funny}}

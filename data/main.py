@@ -147,9 +147,18 @@ json_file = open(getDir('obglist/_list.json'), 'w')
 
 arr = []
 
+counter = 1
+
 for row in reader:
     arr.append(con_str(row[1]))
     s = "unrated"
+    e = ""
+    bench = 0
+    if(row[1] == "Windy Landscape"):
+        e = copypasta
+    if(row[9] == "real"):
+        bench = counter
+        counter = counter + 1
     if(row[8] != '-'):
         s = row[8] + " Demon"
     dic = {
@@ -163,7 +172,9 @@ for row in reader:
         "difficulty" : s,
         "cbf" : row[5],
         "percentToQualify" : 100,
-        "records" : []
+        "records" : [],
+        "rank": bench,
+        "funny": e
     }
     json_ob = json.dumps(dic, indent=4)
     fi = open(getDir('obglist/' + con_str(row[1]) + '.json'), 'w')

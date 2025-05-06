@@ -54,6 +54,7 @@ export default {
             </div>
             <div class="level-container">
                 <div class="level" v-if="level">
+                    <h3 v-if="level.rank == 0">Benchmark Level</h3>
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :verifier="level.verifier" :first_victor="level.first_victor"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>

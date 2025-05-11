@@ -56,9 +56,9 @@ export default {
                 <div class="level" v-if="level">
                     <h3 v-if="level.rank == 0">Benchmark Level</h3>
                     <h1>{{ level.name }}</h1>
-                    <LevelAuthors :author="level.author" :verifier="level.verifier" :first_victor="level.first_victor"></LevelAuthors>
+                    <LevelAuthors :author="level.author" :verifier="level.verifier" :first_victor="level.first_victor" v-if="level.rank != 0"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
-                    <ul class="stats">
+                    <ul class="stats" v-if="level.rank != 0">
                         <li>
                             <div class="type-title-sm">In-game difficulty</div>
                             <p>{{ level.difficulty }}</p>

@@ -187,6 +187,8 @@ json_file.write(json_object)
 json_file.close
 csv_file.close
 
+print("ok")
+
 # #ill
 
 # csv_file = open(getDir('ill.csv'), 'r')
